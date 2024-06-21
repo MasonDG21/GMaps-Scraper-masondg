@@ -27,26 +27,23 @@ class ScraperApp:
     def create_widgets(self):
         self.input_frame = tk.Frame(self.root)
         self.input_frame.pack(pady=10)
-        self.default_search_query = tk.StringVar(value="local roofing contractor")
-        self.default_num_emails = tk.StringVar(value="5")
-        self.default_email_subject = tk.StringVar(value="roofs contract🫱🏽‍🫲🏾%5 revenue share")
 
         # Google Search Query
         self.query_label = tk.Label(self.input_frame, text="Google Search Query:")
         self.query_label.grid(row=0, column=0, padx=10, pady=5, sticky='e')
-        self.query_entry = tk.Entry(self.input_frame, width=50, textvariable=self.default_search_query)
+        self.query_entry = tk.Entry(self.input_frame, width=50)
         self.query_entry.grid(row=0, column=1, padx=10, pady=5)
 
         # Number of Emails to Send
         self.num_emails_label = tk.Label(self.input_frame, text="Number of Emails to Send:")
         self.num_emails_label.grid(row=1, column=0, padx=10, pady=5, sticky='e')
-        self.num_emails_entry = tk.Entry(self.input_frame, width=50, textvariable=self.default_num_emails)
+        self.num_emails_entry = tk.Entry(self.input_frame, width=50)
         self.num_emails_entry.grid(row=1, column=1, padx=10, pady=5)
 
         # Email Subject Line
         self.email_subject_label = tk.Label(self.input_frame, text="Email Subject Line:")
         self.email_subject_label.grid(row=2, column=0, padx=10, pady=5, sticky='e')
-        self.email_subject_entry = tk.Entry(self.input_frame, width=50, textvariable=self.default_email_subject)
+        self.email_subject_entry = tk.Entry(self.input_frame, width=50)
         self.email_subject_entry.grid(row=2, column=1, padx=10, pady=5)
 
         # Load existing sender account
