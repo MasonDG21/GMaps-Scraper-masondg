@@ -21,8 +21,4 @@
 # Setup Steps
     1. Clone or download this repository.
     2. Navigate to the project directory.
-    3. Run the script:
-        ```
-        python src/main.py
-        ```
-
+    3. Run `python src/main.py` in your terminal.
