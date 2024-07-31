@@ -18,8 +18,8 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 from dotenv import load_dotenv
 
-
-csv.field_size_limit(2147483647)  # 2^31 - 1, which is the maximum value for a C long
+# 2^31 - 1, which is the maximum value for a C long
+csv.field_size_limit(2147483647)
 
 
 filtered_domains = [
