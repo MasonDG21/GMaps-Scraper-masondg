@@ -3,3 +3,6 @@ __pycache__/
 
 # Ignore config directory
 config/
+
+# Ignore contact_log.csv
+contact_log.csv
